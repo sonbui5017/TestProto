@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">ProtoSound</string>
+    <string name="title_home">Recognize</string>
+    <string name="title_dashboard">Train Your Sounds</string>
+    <string name="evaluate">Recognize Your Sounds</string>
+    <string name="title_help">Help</string>
+    <string name="title_notifications">About</string>
+    <string name="class_1">Sound 1</string>
+    <string name="class_2">Sound 2</string>
+    <string name="class_3">Sound 3</string>
+    <string name="class_4">Sound 4</string>
+    <string name="class_5">Sound 5</string>
+    <string name="class_1_predefined">Existing sound 1</string>
+    <string name="class_2_predefined">Existing sound 2</string>
+    <string name="class_3_predefined">Existing sound 3</string>
+    <string name="class_4_predefined">Existing sound 4</string>
+    <string name="class_5_predefined">Existing sound 5</string>
+    <string name="protosound">ProtoSound</string>
+    <string name="play">Play</string>
+    <string name="reset">Reset</string>
+    <string name="record_11">Record 11</string>
+    <string name="record_12">Record 12</string>
+    <string name="tutorial_1"><b>1. Choose a location</b></string>
+    <string name="tutorial_2a"><b>2. Select the sounds to recognize</b></string>
+<!--    <string name="tutorial_2b"><b>YOUR CHOICE:</b> Record 5 samples and provide a name. Each sample is 1 second long. (Scroll right to see all 5 "Record" boxes) \n\n<b>PRE-DEFINED:</b> Choose a sound from a list of 9 provided sounds.</string>-->
+    <string name="tutorial_3"><b>3. Record background noise</b></string>
+    <string name="tutorial_4">Complete the steps above before training the model</string>
+    <string name="tutorial_5">Select the \"Recognize\" tab to recognize your sounds</string>
+    <string name="record_1">Record 1</string>
+    <string name="record_2">Record 2</string>
+    <string name="record_3">Record 3</string>
+    <string name="record_4">Record 4</string>
+    <string name="record_5">Record 5</string>
+    <string name="record_15">Record 15</string>
+    <string name="record_14">Record 14</string>
+    <string name="record_13">Record 13</string>
+    <string name="record_6">Record 6</string>
+    <string name="record_7">Record 7</string>
+    <string name="record_8">Record 8</string>
+    <string name="record_9">Record 9</string>
+    <string name="record_10">Record 10</string>
+    <string-array name="sound_array">
+        <item>Appliances</item>
+        <item>Baby Cry</item>
+        <item>Car Honk</item>
+        <item>Cat Meow</item>
+        <item>Dog Bark</item>
+        <item>Doorbell</item>
+        <item>Fire Alarm</item>
+        <item>Knocking</item>
+        <item>Siren</item>
+        <item>Water Running</item>
+    </string-array>
+    <string name="hint0"><i>Port number:</i></string>
+    <string name="hint1"><i>Sound 1 name:</i></string>
+    <string name="hint2"><i>Sound 2 name:</i></string>
+    <string name="hint3"><i>Sound 3 name:</i></string>
+    <string name="hint4"><i>Sound 4 name:</i></string>
+    <string name="hint5"><i>Sound 5 name:</i></string>
+    <string name="hint0b"><i>Location:</i></string>
+    <string name="listening">Listening..</string>
+    <string name="start_listen">Start Listen</string>
+    <string name="confirm">Confirm</string>
+    <string name="port_connected">Port connected!</string>
+    <string name="mic">mic</string>
+    <string name="tap_blue">Start Recording</string>
+    <string name="training_complete">Complete</string>
+    <string name="recording">Recording</string>
+    <string name="done">Recorded</string>
+    <string name="training_data">Training</string>
+    <string name="submit_to_server">TRAIN</string>
+    <string name="user_choice">NEW</string>
+    <string name="pre_defined">EXISTING</string>
+    <string name="greeting"><b>Welcome to ProtoSound</b></string>
+    <string name="submitLocation">Submit</string>
+    <string name="submitted">Submitted</string>
+    <string name="select_predefined">Tap to select</string>
+    <string name="record">Record</string>
+
+    <string name="hello_blank_fragment">1. To train new data, tap on \"Train\"\n
+        User is required to complete all the steps before training data.
+            User has to provide 5 sounds, either by choosing YOUR CHOICE or PRE-DEFINED option.\n
+            \nYOUR CHOICE: the app provides 5 \"Record\" and 5 \"Playback\" boxes. A \"Record\"
+        box records for 1 second using microphone, while a \"Playback\" box lets user hear back what
+        has been recorded.\n
+            \nPRE-DEFINED: user chooses from a list from 9 provided sounds.\n
+        \n\n
+        2. To predict your sounds, tap on \"Evaluate\"\n
+        User is required to train data first before evaluating their sounds.\n
+            By tapping on the microphone icon, the app records and returns query result after every 3-second sound.\n
+        (Note: this does not mean the app continuously returns result every 3 seconds. If a sound is 3-second long
+            then the app will return the result after 3 seconds. If a sound is only 2-second long, the app has to listen
+            for another second before returning the result)
+
+    </string>
+    <string name="choose_again">Back</string>
+    <string name="title_tutorial">Tutorial</string>
+    <string name="app_tutorial">APP TUTORIAL</string>
+    <string name="faq">FAQ</string>
+    <string name="about">About</string>
+    <string name="train">Train</string>
+    <string name="about_1">"ProtoSound is an Android-based application for commercial smartphones that allows users to customize their sound recognition models and receive private sound feedback in a different contexts.
+\nProtoSound makes two technical innovations: first, we adapt prototypical networks, a commonly used algorithm for few-shot image classification, to the domain of sound classification. Second, we extend the traditional training pipeline to incorporate several features for end-user deployment—such as accommodating contextual soundscape variations (e.g., homes vs. outdoors) and supporting training for difficult-to-produce sounds (e.g., fire alarms, sirens).
+\nThe project is inspired by previous sound awareness work with DHH users, our DHH lead author's experiences, and a survey of 472 DHH participants. According to field evaluations with a real-life dataset and an interactive mobile application, ProtoSound can be used to build sound recognition systems that support highly personalized and fine-grained sound categories, can train on-device in real-time, and can handle contextual variations in a variety of real-world contexts using few custom recordings.
+
+\nThank you for using ProtoSound!
+    </string>
+    <string name="email">protosound@cs.uw.edu</string>
+    <string name="website">protosound.cs.uw.edu</string>
+    <string name="finish">Finish</string>
+
+
+    <string name="qa1"><b>How does the option "New" in step 2 work?</b>
+        \n\nYou are prompted to enter a name for your sound and record the sound 5 times. Each recording is 1-second long, which means there are 5 1-second samples. You can play the recording back to see if it is the sound that you want. You can also record again for the same slot when you tap on the "Recorded" button.
+    </string>
+
+    <string name="qa2"><b>Will my submitted locations and self-recorded sounds be saved?</b>
+        \n\nYes. Once you submit a location in step 1, the location is saved and you can access it again when you choose <b>Existing</b> for step 1. As for your recorded sounds, once you train the model, the sounds will be saved with the associated location for later access.
+        \nFor example, if you save "talking" with your location "bedroom". If you select "bedroom" from step 1, "talking" will be in the list of sounds when you choose EXISTING in step 2.
+    </string>
+
+
+    <string name="qa3"><b>Why does Predict not return any result for my sound?</b>
+        \n\nThere are a couple of reasons. You might not have trained the sounds yet or the app simply does not recognize your untrained sound.
+    </string>
+
+    <string name="qa4"><b>Why does Predict return incorrect results for a sound when I have trained it?</b>
+        \n\nIt could be that within your trained dataset, there is low variance among the different sounds which leads to high errors. Alternatively, if a sound is trained through "Your Choice", the 5 recordings may capture vastly different sound waves for a particular sound and this can lead to inconsistencies when getting predictions.
+    </string>
+
+    <string name="qa5"><b>After training 5 sounds, can I train different sounds?</b>
+        \n\nYes. After training 5 sounds, you can make necessary changes on the <b>Train</b>then tap on "TRAIN" to train the sounds again.
+    </string>
+    <string name="user_location_hint">Saved locations</string>
+    <string name="reset_all">Clear all</string>
+
+</resources>

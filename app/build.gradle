@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.testproto'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.testproto"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.3'
+    implementation 'androidx.navigation:navigation-ui:2.3.3'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
+
+    // Scalable UI
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    // Tutorial View dependency
+    implementation 'com.github.msayan:tutorial-view:v1.0.10'
+
+    // Animation
+    implementation 'com.kuassivi.android.view:ripple-pulse-layout:0.1.9'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // Pytorch Mobile
+    implementation 'org.pytorch:pytorch_android:1.8.0'
+    implementation 'org.pytorch:pytorch_android_torchvision:1.8.0'
+
+    // EventBus
+    implementation 'org.greenrobot:eventbus:3.2.0'
+
+    // Apache CSV
+    implementation 'org.apache.commons:commons-csv:1.8'
+
+    // Apache Math
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+
+    // Apache Commons Lang
+    implementation 'org.apache.commons:commons-lang3:3.0'
+
+//    // Apache Commons IO
+//    implementation 'org.apache.commons:commons-io:2.8'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.8.0'
+}
